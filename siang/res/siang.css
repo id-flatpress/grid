@@ -1,0 +1,585 @@
+/*
+===================
+Grid CSS Styles
+===================
+Moddifed by default leggero
+-------------------
+
+Name: Grid
+Author: eggoez
+Version: 1
+Module: siang.css
+*/
+
+@import url(//fonts.googleapis.com/css?family=Ubuntu);
+body { text-align:center; }
+
+#body-container {
+	width: 748px;
+	text-align: justify;
+	border: solid 1px #ccc;
+	padding: 5px;
+	margin: 0 auto 0 auto;
+	background-color: #fff;
+	
+}
+
+body > div#body-container {
+	width: 750px;
+	
+}
+
+#head {
+	padding: 5px;
+	margin-bottom: 5px;
+	background: #fff;
+}
+
+#subheader {
+	text-align: right;
+	font-size: 80%;
+	color: #666;
+	padding: 2px 5px;
+	margin-bottom: 5px;
+	background: #fff;
+}
+
+#outer-container {
+	padding: 0px;
+	margin: 0px;
+	border-top: 1px solid #ccc; /* problem with I.E. */
+	background-color: #fff;
+	height: 1%;
+}
+
+#column {
+	float: right;
+	margin-bottom: 5px;
+	padding: 1px;
+	background-color: #fff;
+	border-left: solid 1px #ccc;
+	width: 205px;
+	font-size: 75%;
+	height:1%;
+}
+
+
+
+#column h4 {
+
+	margin-bottom: .1em;
+}
+
+#column p, #column div { margin: 10px 5px }
+#column ul li table { font-size: 100% }
+
+#column ul {
+	list-style-type: none;
+	margin-right: 10px;
+	margin-bottom: .5em;
+	padding-left: 1em
+}
+
+#column fieldset { margin: 0 5px 0 5px }
+
+#column legend { font-size: 100% }
+
+#main + #column {
+	width: 195px;
+	font-size: 80%;	
+}
+
+	#column ul li table {
+		font-size: 100%;
+	}
+	
+	#column ul {
+		margin-right: 10px;
+		display:block;
+		padding-left: 1em;
+		list-style-type: none;
+	}
+	
+
+
+#main {
+	float:left;
+	text-align: justify;
+	position: relative;
+	/*padding: 5px 15px 5px 5px;*/
+	margin: 5px;
+	
+	width: 500px;
+	font-size: 100%;
+}
+
+#outer-container > #main {
+	width: 540px;
+}
+
+
+#footer {
+	clear: both;
+	font-size: 80%;
+	color: #666;
+	padding: 5px;
+	background-color: #fff;
+}
+
+
+/* ==== Redefinition HTML tag ==== */
+html {
+	font: 12px Ubuntu, Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0
+}
+
+body {
+	font-size: 12px;
+	color: #666;
+	margin: 0;
+	padding: 0;
+	background: #fff
+}
+
+hr { display: none }
+
+p { 
+	margin: .5em 0 ;
+}
+	/* in the specific ID */
+	#column p, #column div { margin: 10px 5px }
+	#main p { line-height: 1.5em; margin-top: 1.2em; }
+	
+/* == Headers == */
+h1 {
+	/* Title of the blog */
+	font-size: 1.6em;
+	letter-spacing: 1px;
+	color: #008cba;
+	margin: 2em 0 0 0;
+}
+
+#head a, #head a:hover {
+	color: #008cba;
+	text-decoration: bold;
+}
+
+h2 { /*  */ }
+
+h3 {
+	/* Titles of the entry */
+	font-size: 18px;
+	color: #008cba;
+	margin: 0;
+	background: transparent;
+}
+
+.entry-title {
+	font-size: 20px;
+	color: #666;
+	font-family: 'Ubuntu', Helvetica, sans-serif;
+}
+.jtgl {
+	float: left;
+	text-align: center;
+	height: 28px;
+	width: 30px;
+	background: transparent;
+	margin: 0 5px 0 0;
+	border:1px solid #ccc;
+}
+
+.btgl {
+	margin: 1px 0 0 0;
+	color: #008cba;
+	font-weight: normal;
+	font-size: 8px;
+	border-bottom:1px solid #ccc;
+}
+.htgl {
+	margin: -4px 0 0 0;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+h4 { font-size: 15px;color: #008cba; }
+	/* in the specific ID */
+	#column h4 {
+		/* Titles of the sections in #column */
+		color: #666;
+		font-family: 'Ubuntu', Helvetica, sans-serif;
+		margin: 0 5px 5px 5px;
+		padding: .2em .5em;
+		border-bottom: 1px solid #ccc;
+		background: #fff /*url('http://dearydepresiku.site90.net/images/bg_title.gif') top left repeat-x; */
+	}
+	#main h4 {
+		margin: 0 0 1em 0
+	}
+
+img { border: none }
+	/* in the specific ID */
+	#main img {  }
+
+blockquote {
+	background: #fff;
+	border-left: 1px solid #5bc0de;
+	font-style: normal;
+	font-size: 14px;
+	padding: 0 10px;
+	margin: 1em 0;
+	width: 90%; }
+ 
+	blockquote p { margin: 0; }
+ 
+pre, code {
+	color: #555;
+	font-family: Ubuntu, monospace, monaco, 'courier new'; }
+ 
+pre {
+	background: #f5f5f5;
+	border-right: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	border-left: 1px dashed #666;
+	font-size: 90%;
+	padding: 1em;
+	margin: 1em 0;
+	overflow: auto;
+	height: auto !important;
+	height: 40px;
+	width: 90%; }
+ 
+
+
+ul, li, ol { margin:0; padding:0}
+
+ul { padding-top: 0.3em; padding-bottom: 0.3em; }
+
+/* == List in MAIN == */
+#main ul {
+	list-style: none;
+	padding: 0 0 0 1.6em;
+}
+
+#main ul li:before {
+	content: "\00BB \0020"
+}
+
+#main ol {
+	list-style-position: inside;
+	padding: 0 1.6em 0 1.6em
+}
+
+/* == Links == */
+a:link {
+	color: #338cba;
+	font-weight: normal;
+	text-decoration: none
+}
+
+a:visited{
+	color: #338cba;
+	font-weight: normal;
+	text-decoration: none
+}
+
+a:hover {
+	color: #00526e;
+	text-decoration: underline;
+	font-style:normal;
+}
+
+h3 a, h3 a:link, h3 a:visited {
+	color: #008cba;
+}
+h3 a:hover, .entry-title a:hover {
+	color: #666;
+	text-decoration: none;
+}
+
+#subheader a:link, #subheader a:visited, #footer a:link, #footer a:visited  {
+	color: #555;
+	text-decoration: none;
+	font-weight: normal
+}
+
+#subheader a:hover, #footer a:hover { color: #333; text-decoration: underline }
+
+/* == Form == */
+form { margin: 1em 0 }
+
+fieldset {
+	margin: 0 0 1em 0;
+	padding: .5em;
+	border: 1px solid #ccc;
+	/*background: url(../imgs/transp.gif)*/
+}
+	/* in the specific ID */
+	#column fieldset { margin: 0 5px 0 5px }
+
+legend {
+	color: #666666;
+	font-size: 80%;
+	font-style: oblique
+}
+	/* in the specific ID */
+	#column legend { font-size: 100%; }
+
+
+/* ==== Classes ==== */
+.subtitle {
+	font-size: 80%;
+	font-style: normal;
+	color: #777;
+	margin: .5em 0 0 0
+}
+
+.date, hdate {
+	/* Date under titles of the entry */
+	font-size: 8px;
+	font-style: normal;
+	color: gray;
+	margin: .2em 0 .8em 0
+}
+
+.small {font-size:8px}
+
+.entry {
+	margin: 0 0 1.5em 0;
+	padding: 0;
+	/* floating imgs fix */
+	overflow: hidden;
+	height:1%; /*ie hack*/
+		border-bottom: solid 1px #ccc;
+	
+}
+
+.entry-footer {
+	/* Paragraph under footer entry */
+	font-size: 80%;
+	text-align: right;
+	color: gray;
+	margin: .5em 0 0 0;
+	clear: both;
+
+	
+}
+
+.cdate {
+	font-size: 8px;
+	font-style: normal;
+	color: gray;
+	float:right;
+}
+
+#comments li {
+	margin: 0 0 1.5em 0;
+	padding: 5px;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+
+#comments li.comment-admin {
+	border:1px solid #666;
+}
+
+#comments li.comment-admin strong.comment-name { font-size:140% }
+
+.gravatar {
+	height: 42px;
+	width: 42px;
+	float: right;
+    clear: right; 
+    margin-bottom: 1em; 
+    margin-left: 1em;
+
+}
+
+.floatLeft { float: left } /* don't touch this class!! */
+
+.floatRight { float: right } /* don't touch this class!! */
+
+
+.imageColumn { text-align: center }
+.imageColumn img { margin: 2px 0px }
+
+
+
+.admincontrols {
+	float: right;
+	font-size: 0.75em;
+}
+
+
+.navigation {
+	font-size: 80%;
+	margin-bottom: 5em;
+}
+
+.alignleft {
+	float: left;
+}
+
+
+.alignright {
+	float: right;
+}
+
+
+
+/* notifications */
+
+#main .msgs, .msgs {
+	margin-top: 1em;
+    margin-left: 0em;
+    padding: 1em 2em; 
+}
+
+.errors {
+	color: red;
+    border: 1px solid;
+	border-color: #c90303;
+	background: #fff;
+}
+
+.errors a {
+	color: #444;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+
+.notifications {
+	color : #01ae01;
+	border-top: 1px solid;
+    border: 1px solid;
+	border-color: #01ae01;
+	background: #fff;
+
+}
+
+.warnings {
+	color : #ff7200;
+	border-top: 1px solid;
+    border-bottom: 1px solid;
+	border-color: #ff7200;
+	background: #fff;
+
+}
+
+.field-error {
+	border: red 1px solid;
+}
+
+/* button ny goezz */
+.buttonbar { text-align: none }
+.buttonbar input, reset  {
+	text-align: center;
+	border: solid 1px #606060;
+	border-radius: 1px;
+	background: #fff;
+	color:#444;
+	font-family: Ubuntu;
+	width:50px;
+}
+.buttonbar input:hover, reset:hover {
+	color:#3399FF;
+	border: solid 1px #606060;
+	/* background: #eee; */
+	background: #fff;
+	cursor: pointer; cursor: hand;
+	font-family: Ubuntu;
+
+}
+.buttonbar input:active, reset:active {
+	/* background: #f5f8fd; */
+	color: #000;
+	background: #fff;
+	border: solid 1px #037EBD;
+}
+#widget-searchbox h4, #widget-calendar h4{
+	display: none;
+}
+#widget-searchbox, #widget-searchbox input[type=submit]{
+	display: none;
+}
+
+
+input[type=submit]{cursor: pointer;		font-family: Ubuntu;}
+input{	background: #FFF;
+	border:1px solid #ccc;
+	padding: .2em;
+	font-family: Ubuntu;
+	font-size:11px;}
+	
+textarea, select {
+	background: #FFF;
+	border:1px solid #ccc;
+	padding: .2em;
+	margin: .2em 0;
+	color: #ccc;
+	font-family: Ubuntu;
+}
+input:hover, textarea:hover { border: 1px solid #3399FF;background: #fffffe; }
+input:focus, textarea:focus { border: 1px solid #3399FF; color:#666; background: #eee; }
+textarea {
+	font-family: Ubuntu;
+	margin: .1em 0 1em 0;
+	width: 99%;
+	color:#ccc;
+}
+#searchbox  {
+	text-align: center;
+	padding: 0;
+	height: 35px;
+	margin-right: -10px
+}
+#searchbox input {
+	padding: 2px 2px 2px 2px;
+	font-family: Ubuntu;
+	font-size:11px;
+}
+#searchbox input[type=submit]{
+	background: url(find.png) no-repeat;
+	border: 0;
+	padding: 2px 5px 2px 15px;
+	cursor: pointer;
+}
+/* ===== TABLES ===== */
+table {
+	border: 1px solid #ccc;
+	border-spacing: 2px;
+	margin: 1em 0;
+	padding: .2em; }
+ 
+th {
+	padding: .1.5em;
+	background: #fff;
+	border-left: 1px solid #fff; }
+ 
+tr { background: #fff; }
+ 
+	tr:nth-child(odd) {
+		background: #eee;
+		margin: 0; }
+ 
+	tr:nth-child(even) {
+		background: #fff;
+		margin: 0; }
+ 
+	tr:hover { background: #ccc; }
+ 
+td {
+	padding: .5em;
+	text-align: right; }
+ 
+td:hover {
+		background: #606060;
+		color: #fff; }
+		
+.linked-day td {background: #d9edf7; }
+.calendar-day a {	font-weight:normal;}
+ul, li, ol {list-style-type: none;}
+.calendar-month {color:#037EBD;border-top:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #ccc;font-size:12px;}
